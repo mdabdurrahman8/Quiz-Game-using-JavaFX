@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="157.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.quizCardLayoutController">
+   <children>
+      <VBox layoutX="36.0" layoutY="-59.0" prefHeight="157.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label fx:id="title" text="Quiz Title">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="questionNumber" text="Number of Question:10s">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <FlowPane alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="startButton" mnemonicParsing="false" onAction="#startQuizButton" text="Start Quiz">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </FlowPane>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <DropShadow blurType="TWO_PASS_BOX" height="56.032812500000006" radius="27.550703125000002" spread="0.64" width="56.17">
+         <color>
+            <Color red="0.6578947305679321" green="0.6365740895271301" blue="0.6365740895271301" />
+         </color>
+      </DropShadow>
+   </effect>
+</AnchorPane>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="836.0" prefWidth="1060.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.addQuestion">
+   <children>
+      <SplitPane dividerPositions="0.444234404536862" prefHeight="836.0" prefWidth="1060.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="945.0" prefWidth="1060.0" AnchorPane.bottomAnchor="-109.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TabPane prefHeight="953.0" prefWidth="1060.0" style="-fx-background-color: #0D0D0D;" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="             Add MCQ               ">
+                              <content>
+                                <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="807.0" prefWidth="1060.0">
+                                       <children>
+                                          <AnchorPane layoutY="14.0" minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="1046.0">
+                                             <children>
+                                                <HBox layoutX="176.0" layoutY="37.0" prefHeight="33.0" prefWidth="537.0">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="427.0" text="                     Add a new Quiz Question" textFill="#eeeeee">
+                                                         <font>
+                                                            <Font name="Arial Bold Italic" size="20.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox layoutX="98.0" layoutY="77.0" prefHeight="84.0" prefWidth="432.0">
+                                                   <children>
+                                                      <TextField fx:id="quizTitle" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="295.0" promptText="Enter Quiz Title" style="-fx-background-color: #0D0D0D;">
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="24.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets bottom="20.0" right="50.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                      <Button fx:id="setQuizTitle" mnemonicParsing="false" onAction="#setQuizTitleButton" prefHeight="35.0" prefWidth="77.0" style="-fx-background-color: #35BDD0;" text="OK">
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="16.0" />
+                                                         </font>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                         <HBox.margin>
+                                                            <Insets top="14.0" />
+                                                         </HBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <Separator layoutY="81.0" prefHeight="0.0" prefWidth="1060.0" />
+                                                <Separator layoutX="133.0" layoutY="131.0" prefHeight="6.0" prefWidth="391.0" />
+                                                <Separator layoutY="193.0" prefHeight="3.0" prefWidth="1060.0" />
+                                                <HBox layoutX="10.0" layoutY="201.0" prefHeight="40.0" prefWidth="1041.0">
+                                                   <children>
+                                                      <TextField fx:id="option1" prefHeight="38.0" prefWidth="1028.0" promptText="Option1" style="-fx-background-color: Enter Question;">
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="25.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                                <Separator layoutY="249.0" prefHeight="1.0" prefWidth="1060.0" />
+                                                <HBox layoutY="262.0" prefHeight="40.0" prefWidth="1041.0">
+                                                   <children>
+                                                      <HBox prefHeight="40.0" prefWidth="1021.0">
+                                                         <children>
+                                                            <TextField fx:id="option2" prefHeight="49.0" prefWidth="1021.0" promptText="Option2" style="-fx-background-color: #0D0D0D;">
+                                                               <font>
+                                                                  <Font name="System Bold Italic" size="25.0" />
+                                                               </font>
+                                                            </TextField>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </HBox>
+                                                <Separator layoutY="297.0" prefHeight="12.0" prefWidth="1060.0" />
+                                                <Separator layoutX="-5.0" layoutY="416.0" prefHeight="4.0" prefWidth="1060.0" />
+                                                <HBox layoutX="6.0" layoutY="309.0" prefHeight="40.0" prefWidth="1029.0">
+                                                   <children>
+                                                      <TextField fx:id="option3" prefHeight="48.0" prefWidth="1029.0" promptText="Option3" style="-fx-background-color: #0D0D0D;">
+                                                         <font>
+                                                            <Font name="System Bold Italic" size="25.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                                <Separator layoutX="-4.0" layoutY="352.0" prefHeight="4.0" prefWidth="1067.0" />
+                                                <Label layoutX="311.0" layoutY="420.0" prefHeight="23.0" prefWidth="249.0" text="Select a Right Answer" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Arial Bold Italic" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <RadioButton fx:id="option1Radio" layoutX="220.0" layoutY="457.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Option 1" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </RadioButton>
+                                                <RadioButton fx:id="option2Radio" layoutX="345.0" layoutY="457.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Option 2" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </RadioButton>
+                                                <RadioButton fx:id="option3Radio" layoutX="454.0" layoutY="457.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Option 3" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </RadioButton>
+                                                <RadioButton fx:id="option4Radio" layoutX="566.0" layoutY="457.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Option 4" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </RadioButton>
+                                                <Button fx:id="submitQuiz" layoutX="94.0" layoutY="515.0" mnemonicParsing="false" onAction="#submitQuizButton" prefHeight="25.0" prefWidth="113.0" text="Submit Quiz" textFill="#171717">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Button>
+                                                <TextField fx:id="questionAdd" layoutX="6.0" layoutY="137.0" prefHeight="15.0" prefWidth="1036.0" promptText="Enter Question" style="-fx-background-color: #0D0D0D;">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="25.0" />
+                                                   </font>
+                                                </TextField>
+                                                <TextField fx:id="option4" layoutX="5.0" layoutY="361.0" prefHeight="36.0" prefWidth="1051.0" promptText="Option4" style="-fx-background-color: #0D0D0D;">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="25.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </AnchorPane>
+                                          <Button fx:id="addNextQuestion" layoutX="278.0" layoutY="531.0" mnemonicParsing="false" onAction="#addNextQuestionButton" prefHeight="30.0" prefWidth="170.0" text="Add Next Question" textFill="#171717">
+                                             <font>
+                                                <Font name="System Bold Italic" size="14.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="       Add Fill in the Blanks         ">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="481.0" prefWidth="961.0">
+                                       <children>
+                                          <HBox layoutX="176.0" layoutY="37.0" prefHeight="33.0" prefWidth="537.0">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="427.0" text="                     Add a new Quiz Question" textFill="#eeeeee">
+                                                   <font>
+                                                      <Font name="Arial Bold Italic" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutX="95.0" layoutY="81.0" prefHeight="67.0" prefWidth="435.0">
+                                             <children>
+                                                <TextField fx:id="BlankTitle" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="280.0" promptText="Enter Quiz Title" style="-fx-background-color: #0D0D0D;">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="24.0" />
+                                                   </font>
+                                                </TextField>
+                                                <Button fx:id="setBlankQuiz" mnemonicParsing="false" onAction="#setBlankQuizButton" prefHeight="27.0" prefWidth="82.0" style="-fx-background-color: #35BDD0;" text="OK">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="16.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                   <HBox.margin>
+                                                      <Insets left="50.0" top="12.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                          <Separator layoutY="78.0" prefHeight="2.0" prefWidth="961.0" />
+                                          <Separator layoutX="133.0" layoutY="131.0" prefHeight="6.0" prefWidth="391.0" />
+                                          <HBox layoutX="32.0" layoutY="137.0" prefHeight="35.0" prefWidth="897.0">
+                                             <children>
+                                                <TextField fx:id="addBlanks" prefHeight="21.0" prefWidth="920.0" promptText="Enter Question" style="-fx-background-color: #0D0D0D;">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="25.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <Separator layoutY="193.0" prefHeight="0.0" prefWidth="961.0" />
+                                          <HBox layoutX="14.0" layoutY="215.0" prefHeight="40.0" prefWidth="362.0">
+                                             <children>
+                                                <Label prefHeight="23.0" prefWidth="85.0" text="Answer: " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Arial Bold Italic" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="userAnswer" prefHeight="25.0" prefWidth="199.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutY="262.0" prefHeight="40.0" prefWidth="362.0">
+                                             <children>
+                                                <HBox prefHeight="40.0" prefWidth="362.0" />
+                                             </children>
+                                          </HBox>
+                                          <Label layoutX="311.0" layoutY="420.0" prefHeight="23.0" prefWidth="249.0" text="Enter the Right Answer" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold Italic" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="submitBlanks" layoutX="100.0" layoutY="515.0" mnemonicParsing="false" onAction="#submitBlanksButton" prefHeight="25.0" prefWidth="113.0" text="Submit Quiz" textFill="#171717">
+                                             <font>
+                                                <Font name="System Bold Italic" size="14.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                          <Button fx:id="addNextBlankQuestion" layoutX="272.0" layoutY="515.0" mnemonicParsing="false" onAction="#addNextBlankQuestionButton" prefHeight="30.0" prefWidth="170.0" text="Add Next Question" textFill="#171717">
+                                             <font>
+                                                <Font name="System Bold Italic" size="14.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                          <TextField fx:id="answer" layoutX="301.0" layoutY="458.0" prefHeight="25.0" prefWidth="288.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TreeView fx:id="treeView" layoutX="130.0" layoutY="137.0" prefHeight="834.0" prefWidth="585.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

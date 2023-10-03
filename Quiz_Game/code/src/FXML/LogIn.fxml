@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1899.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main">
+   <children>
+      <ImageView fitHeight="168.0" fitWidth="382.0" layoutX="616.0" layoutY="69.0" AnchorPane.bottomAnchor="763.0" AnchorPane.leftAnchor="616.0" AnchorPane.rightAnchor="901.0" AnchorPane.topAnchor="69.0">
+         <image>
+            <Image url="@../download.jpg" />
+         </image>
+      </ImageView>
+      <TabPane layoutY="-4.0" prefHeight="200.0" prefWidth="1899.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="                                                   STUDENT                                                             ">
+
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="SignUpStudent" layoutX="605.0" layoutY="605.0" mnemonicParsing="false" onAction="#SignUpStudentButton" prefHeight="52.0" prefWidth="402.0" style="-fx-background-color: #000000;" text="Sign up if you're a new user" textFill="WHITE" underline="true">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label layoutX="660.0" layoutY="218.0" prefHeight="45.0" prefWidth="293.0" text="Student Login Panel" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="419.0" layoutY="314.0" prefHeight="38.0" prefWidth="91.0" text="E-mail" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="studentEmail" layoutX="557.0" layoutY="313.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="526.0" promptText="  e.g. : abdur.rahman2.cse@ulab.edu.bd" style="-fx-background-color: #ffffff; -fx-border-color: #15A1E1;" />
+                        <Label layoutX="409.0" layoutY="387.0" prefHeight="21.0" prefWidth="137.0" text="Password" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="studentPassword" layoutX="557.0" layoutY="387.0" maxWidth="-Infinity" prefHeight="29.0" prefWidth="526.0" promptText="*********" style="-fx-background-color: #ffffff; -fx-border-color: #15A1E1;" />
+                        <Button fx:id="studentLogIn" contentDisplay="BOTTOM" layoutX="757.0" layoutY="511.0" mnemonicParsing="false" onAction="#studentLoginButton" prefHeight="41.0" prefWidth="99.0" style="-fx-background-color: #1FA9BB;" text="Log in">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="                                                   TEACHER                                                             ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="666.0" prefWidth="1582.0">
+                     <children>
+                        <Label layoutX="652.0" layoutY="212.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="309.0" text="Teacher Login Panel" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="teacherEmail" layoutX="550.0" layoutY="293.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="526.0" promptText="  e.g. : teacher@ulab.edu.bd" style="-fx-background-color: #ffffff; -fx-border-color: #15A1E1;" />
+                        <Label layoutX="417.0" layoutY="293.0" prefHeight="38.0" prefWidth="91.0" text="E-mail" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="teacherPassword" layoutX="550.0" layoutY="383.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="526.0" promptText="*********" style="-fx-background-color: #ffffff; -fx-border-color: #15A1E1;" />
+                        <Label layoutX="400.0" layoutY="382.0" prefHeight="38.0" prefWidth="150.0" text="Password" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="teacherLogin" contentDisplay="BOTTOM" layoutX="757.0" layoutY="510.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#teacherLoginButton" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #1FA9BB;" text="Log in">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="SignUpTeacher" layoutX="582.0" layoutY="624.0" mnemonicParsing="false" onAction="#SignUpTeacherButton" prefHeight="1.0" prefWidth="379.0" style="-fx-background-color: #000000;" text="Sign up if you're a new user" textFill="WHITE" underline="true">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="                                                             ADMIN                                                               ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="-199.0" layoutY="-7.0" prefHeight="449.0" prefWidth="761.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="-199.0" AnchorPane.rightAnchor="199.00000000000023" AnchorPane.topAnchor="-7.0">
+                           <children>
+                              <Label prefHeight="45.0" prefWidth="298.0" text="Admin Login Panel" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" left="250.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label prefHeight="38.0" prefWidth="91.0" text="E-mail" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" right="20.0" top="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="adminEmail" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="526.0" promptText="  e.g. : admin@ulab.edu.bd" style="-fx-background-color: #ffffff; -fx-border-color: #15A1E1;">
+                                 <VBox.margin>
+                                    <Insets bottom="50.0" left="150.0" top="-40.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label prefHeight="38.0" prefWidth="139.0" text="Password" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <PasswordField fx:id="adminPassword" maxWidth="-Infinity" prefHeight="32.0" prefWidth="526.0" promptText="*********" style="-fx-background-color: #ffffff; -fx-border-color: #15A1E1;">
+                                 <VBox.margin>
+                                    <Insets bottom="50.0" left="150.0" top="-40.0" />
+                                 </VBox.margin>
+                              </PasswordField>
+                              <Button fx:id="adminLogin" mnemonicParsing="false" onAction="#adminLoginButton" prefHeight="48.0" prefWidth="99.0" style="-fx-background-color: #1FA9BB;" text="Log in">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="350.0" top="50.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="600.0" top="300.0" />
+                           </padding>
+                        </VBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
