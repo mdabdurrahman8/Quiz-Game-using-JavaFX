@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.Java linguist-detectable=true
+*.JavaFX linguist-detectable=true
+*.SQLite linguist-detectable=true
